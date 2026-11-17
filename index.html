@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff1f5">
+  <meta name="description" content="A little kingdom made with love for Princess Zoya.">
+  <title>To My Princess Zoya 👑</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"></div>
+  <div class="float-layer" id="floatLayer" aria-hidden="true"></div>
+
+  <main>
+    <section class="welcome" id="welcome" aria-labelledby="welcomeTitle">
+      <div class="welcome-card">
+        <div class="royal-seal" aria-hidden="true"><span>♛</span></div>
+        <p class="eyebrow">A little place made with love</p>
+        <h1 id="welcomeTitle">Welcome to Your<br><em>Little Kingdom</em>,<br>Princess Zoya</h1>
+        <p class="welcome-sub">Someone made this little world just for you.</p>
+        <button class="primary-btn" id="openKingdom">Open Your Surprise <span>💗</span></button>
+        <div class="welcome-foot">✧ &nbsp; Your very own fairytale begins here &nbsp; ✧</div>
+      </div>
+      <span class="corner-rose rose-one">✿</span><span class="corner-rose rose-two">✿</span>
+    </section>
+
+    <div id="kingdom" class="kingdom hidden">
+      <header class="topbar">
+        <a class="brand" href="#home"><span>♛</span> Zoya's Kingdom</a>
+        <nav aria-label="Main navigation">
+          <a href="#letter">Love Letter</a><a href="#memories">Memories</a><a href="#surprise">Surprises</a>
+        </nav>
+      </header>
+
+      <section class="hero section" id="home">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">A royal welcome, just for you</p>
+          <h2>For the girl who<br><em>makes life brighter.</em></h2>
+          <p class="hero-text">A tiny kingdom filled with warm thoughts, happy memories, and a reminder of how much you are appreciated.</p>
+          <a class="text-link" href="#letter">Discover your letter <span>↓</span></a>
+        </div>
+        <div class="hero-art reveal" aria-label="Decorative crown and flowers">
+          <div class="halo"></div><div class="big-crown">♛</div>
+          <span class="art-heart h1">♡</span><span class="art-heart h2">♥</span>
+          <span class="art-spark s1">✦</span><span class="art-spark s2">✧</span>
+          <div class="art-caption">To my favourite<br><strong>Princess Zoya</strong></div>
+        </div>
+      </section>
+
+      <section class="section letter-section" id="letter">
+        <div class="section-heading reveal"><p class="eyebrow">A note from my heart</p><h2>A little <em>love letter</em></h2><p>Some words I hope you can keep close.</p></div>
+        <button class="envelope-wrap reveal" id="envelope" aria-label="Open the love letter" aria-expanded="false">
+          <span class="envelope-hint">Tap to open your letter</span>
+          <span class="envelope">
+            <span class="env-back"></span><span class="letter-paper">
+              <span class="letter-content">
+                <strong>Dear Zoya,</strong>
+                <span>I don't think you realize how much your presence means to me. You have supported me through so many situations, believed in me, and motivated me whenever I needed encouragement.</span>
+                <span>You have been there through my ups and downs, and that means more to me than words can explain.</span>
+                <span>Thank you for believing in me, supporting my dreams, and inspiring me to become a better person.</span>
+                <span>No matter how busy life gets, I hope you always remember how special and appreciated you are.</span>
+                <span class="letter-sign">With love,<br>Rayyan ❤️</span>
+              </span>
+            </span>
+            <span class="env-front"></span><span class="env-flap"></span><span class="wax-seal">♥</span>
+          </span>
+        </button>
+        <p class="letter-note" id="letterNote">A little reminder, whenever you need one. 💌</p>
+      </section>
+
+      <section class="section memories-section" id="memories">
+        <div class="section-heading reveal"><p class="eyebrow">Little moments, big meaning</p><h2>Our <em>memories</em></h2><p>Six little spaces for moments worth keeping.</p></div>
+        <div class="gallery">
+          <!-- Replace photo-1.jpg ... photo-6.jpg in assets/photos with your own images. -->
+          <button class="photo-card reveal" data-photo="assets/photos/photo-1.jpg" aria-label="Memory photo 1"><img src="assets/photos/photo-1.jpg" alt="Memory 1" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><span class="photo-placeholder"><b>✿</b><small>Our favourite moment</small><em>Add photo 01</em></span><span class="photo-index">01</span></button>
+          <button class="photo-card reveal" data-photo="assets/photos/photo-2.jpg" aria-label="Memory photo 2"><img src="assets/photos/photo-2.jpg" alt="Memory 2" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><span class="photo-placeholder"><b>♡</b><small>A day to remember</small><em>Add photo 02</em></span><span class="photo-index">02</span></button>
+          <button class="photo-card reveal" data-photo="assets/photos/photo-3.jpg" aria-label="Memory photo 3"><img src="assets/photos/photo-3.jpg" alt="Memory 3" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><span class="photo-placeholder"><b>✧</b><small>Little happy things</small><em>Add photo 03</em></span><span class="photo-index">03</span></button>
+          <button class="photo-card reveal" data-photo="assets/photos/photo-4.jpg" aria-label="Memory photo 4"><img src="assets/photos/photo-4.jpg" alt="Memory 4" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><span class="photo-placeholder"><b>❀</b><small>One for the scrapbook</small><em>Add photo 04</em></span><span class="photo-index">04</span></button>
+          <button class="photo-card reveal" data-photo="assets/photos/photo-5.jpg" aria-label="Memory photo 5"><img src="assets/photos/photo-5.jpg" alt="Memory 5" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><span class="photo-placeholder"><b>♥</b><small>A moment of joy</small><em>Add photo 05</em></span><span class="photo-index">05</span></button>
+          <button class="photo-card reveal" data-photo="assets/photos/photo-6.jpg" aria-label="Memory photo 6"><img src="assets/photos/photo-6.jpg" alt="Memory 6" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><span class="photo-placeholder"><b>✦</b><small>And many more to come</small><em>Add photo 06</em></span><span class="photo-index">06</span></button>
+        </div>
+        <p class="gallery-tip">Your photos stay in this project — nothing is uploaded to a third-party service.</p>
+      </section>
+
+      <section class="section surprise-section" id="surprise">
+        <div class="section-heading reveal"><p class="eyebrow">Three tiny reminders</p><h2>A little <em>something for you</em></h2><p>Choose a button and let the kingdom tell you something sweet.</p></div>
+        <div class="surprise-grid">
+          <article class="surprise-card reveal"><span class="card-icon">👑</span><h3>How Special Are You?</h3><p>Find out just how one-of-a-kind you are.</p><button class="soft-btn" data-message="There is no copy of you in this world, Zoya. Your kindness, your strength, and the way you make ordinary moments feel special are uniquely yours.">Open your answer</button></article>
+          <article class="surprise-card reveal"><span class="card-icon">🌷</span><h3>A Little Compliment for You</h3><p>A compliment, wrapped with a little sparkle.</p><button class="soft-btn" data-message="You have a beautiful way of making people feel seen and supported. Never underestimate how much goodness you bring into the lives around you.">Unwrap a compliment</button></article>
+          <article class="surprise-card reveal"><span class="card-icon">💌</span><h3>Click for a Surprise ❤️</h3><p>One more little note, just because.</p><button class="soft-btn" data-message="If this page could give you one thing, it would be a pocket-sized reminder to smile, believe in yourself, and remember that someone is cheering you on. ❤️">Reveal surprise</button></article>
+        </div>
+        <div class="message-panel" id="messagePanel" aria-live="polite"><span>✧</span><p>Pick a little surprise above...</p></div>
+      </section>
+
+      <section class="final-section">
+        <div class="final-crown">♛</div><p class="eyebrow">A kingdom, made just for you</p>
+        <h2>Every princess deserves<br>her own <em>little kingdom.</em></h2>
+        <p class="final-copy">Every princess deserves her own little kingdom, and this one is made especially for you, Zoya. Keep smiling and keep shining. ❤️</p>
+        <button class="primary-btn final-btn" id="madeWithLove">Made With Love by Rayyan <span>♥</span></button>
+        <p class="footer-note">Made of little moments & lots of affection ✧</p>
+      </section>
+      <footer>© A little corner of the internet, reserved for Princess Zoya</footer>
+    </div>
+  </main>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Memory photo viewer">
+    <button class="lightbox-close" id="closeLightbox" aria-label="Close photo">×</button>
+    <img id="lightboxImage" src="" alt="Expanded memory">
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
